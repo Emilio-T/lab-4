@@ -23,5 +23,23 @@ public class AnimalTest
     }
 
     // TODO: test full constructor, getters, and toString
+    public void animalConstructorTest() throws AssertException
+    {
+        Animal animal = new Animal("Orange","Garfield",30.0,10.0);
+        
+        Assert.assertEquals("Orange", animal.getColor());
+        Assert.assertEquals("Tony",animal.getName());
+        Assert.assertEquals(10, animal.getHeight(), 0.01);
+        Assert.assertEquals(30, animal.getHeight(), 0.01);
+        
+    }
+    
+    public void animalToStringTest() throws AssertException
+    {
+        Animal animal = new Animal("Orange","Garfield",30.0,10.0);
+        String actual = animal.toString().replaceAll("\\s", "");
+        String expected = "Garfield, a Orange-colored animal, 30 pounds, 10 inches";
+        Assert.assertEquals(expected, actual);
+    }
 }
 
