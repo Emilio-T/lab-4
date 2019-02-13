@@ -40,6 +40,7 @@ public class ZooTest
         String expected = "These animals live in the zoo: Garfield, a Orange-colored animal. 30.0 pounds, 10.0 inches"
                 + "Odie, a tan-colored animal. 10.0 pounds, 12.0 inches";
         Assert.assertEquals(expected, actual);
+        
     }
 
 
